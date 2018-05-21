@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://use.fontawesome.com/53103b186b.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar|Oswald" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Task List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card" id="main">
+                    <div class="card-content">
+                        <h5 class="card-title">Task List</h5>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" id="task" name="type" placeholder="Walk the dog...">
+                                    <label for="task">New Task </label>
+                                </div>
+                                <input type="submit" value="Add task" class="btn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5 id="task-title">Tasks</h5>
+                        <div class="input-field col s12">
+                            <input type="text" id="filter" name="filter">
+                            <label for="filter">Filter Task</label>
+                        </div>
+                        <ul class="collection"></ul>
+                        <a href="#" class="clear-tasks btn black">Clear Tasks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
