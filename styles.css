@@ -1,21 +1,48 @@
-form {
-    width: 97%;
-    margin: 0 auto;
+#main-width {
+    margin-top: 100px;
+    max-width: 500px;
 }
-.container {
-    max-width: 75%;
-    margin-top: 30px;
+.chip {
+    padding-left: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
-.btn, .card {
-    border-radius: 10px;
+.collection {
+    border: none;
 }
-body {
-    background-color: #F0F0F0;
+.btn-floating {
+    border-radius: 33px;
 }
-#main, input {
-    background-color: #FFFDEC;
-    font-family: 'Oswald', sans-serif;
+.submit-button input {
+    color: white;
 }
-.collection-item {
-    font-family: 'Kavivanar', cursive;   
+.submit-button, .clear-button {
+    display: flex;
+    justify-content: center;
+}
+#title, h5 {
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 20px;
+}
+.card-title, #task-title {
+    padding: 5px;
+    border: 1px solid #26a69a;
+    border-radius: 20px;
+}
+#filter, #task {
+    margin-bottom: 20px;
+}
+input[type="submit"] { 
+    box-sizing: border-box 
+}
+btn {
+    padding: none;
+}
+.validate {
+    background-color: none;
+}
+.card {
+    background-color: ##fcfffe;
 }

@@ -31,9 +31,9 @@ function getTasks() {
 
     tasks.forEach(function(task){
         //Create li element
-        const li = document.createElement('li');
+        const li = document.createElement('div');
         //Add Class
-        li.className = 'collection-item';
+        li.className = 'chip';
         //Create text node and append to li
         li.appendChild(document.createTextNode(task));
         //Create new link element
@@ -55,9 +55,9 @@ function addTask(e) {
         return false;
     }
     //Create li element
-    const li = document.createElement('li');
+    const li = document.createElement('div');
     //Add Class
-    li.className = 'collection-item';
+    li.className = 'chip';
     //Create text node and append to li
     li.appendChild(document.createTextNode(taskInput.value));
     //Create new link element
@@ -65,7 +65,7 @@ function addTask(e) {
     //Add Class
     link.className = 'delete-item secondary-content';
     //Add icon html
-    link.innerHTML = '<i class="fa fa-remove"></i>';
+    link.innerHTML = '<i class="fa fa-remove" id="x"></i>';
     //Append the link to li
     li.appendChild(link);
     //Append li to ul
@@ -142,7 +142,7 @@ function clearTasksFromLocalStorage() {
 function filterTasks(e) {
     const text = e.target.value.toLowerCase();
 
-    document.querySelectorAll('.collection-item').forEach(
+    document.querySelectorAll('.chip').forEach(
         function(task){
             const item = task.firstChild.textContent;
             if(item.toLowerCase().indexOf(text) != -1) {
